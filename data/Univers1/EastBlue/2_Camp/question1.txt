@@ -1,0 +1,35 @@
+Vous vous retrouvez face au camp des pirates de l'île. Rassembler autour du feu de camp, ils enterrent un précieux trésor.
+Essayé de volé le trésor à vos risques et périls
+Vous entendez un bruit derriere vous, dans la panique vous tentez le tout pour le tout est foncé vers le trésor
+50
+50
+5000
+
+21_CampVolRate
+21_CampVolReussi
+
+Essayé de contourner le camp de pirates et fuir le plus loin possible
+En courant les yeux fermer, vous arrivez a une foret. Durant la traversée de cette foret sombre, un singe vous balance une noix de coco sur la tête, vous tombez dans un coma
+10
+10
+5000
+
+6_LoupHurlementForet
+4_EntreeForet
+
+Attaquer les pirates de front
+En poussant un grand crie, vous foncez dans le tas, sans meme vous en rendre compte, vous avez l'épée du capitaine à la gorge
+150
+50
+5000
+
+22_CampAttaquePseudoReussi
+
+Ne plus bouger, et se faire discret
+Vous restez sur place inutilement, ca n'a servis a rien, vous etes inutile
+-25
+0
+5000
+
+23_CampInterieur
+

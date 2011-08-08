@@ -1,0 +1,32 @@
+Vous êtes dans une forêt: Vous appercevez un panneau, sur lequel est indiqué "SOON: Quelque chose ici".
+Vous sortez une boite de pizza de votre poche, et décidez d'en manger un bout malgré l'epaisseur couche bleue qui semble émaner de celle-ci.
+-1000
+Après quelques bouchées et en quelques secondes, vous vous effondrez par terre. Pas de chance, la pizza semblait être plus que périmée.
+-5000
+5000
+
+foretMort
+
+Vous observez le panneau plus attentivement et le lisez.
+10
+En observant le panneau, vous observez en petit écrit "->". Vous suivez le chemin, et il semblerait que vous soyez désormais moins perdu.
+-100
+5000
+
+
+Vous levez le panneau depuis le nord, et le jettez par terre.
+20
+Ceci était une idée géniale (pourquoi donc, personne ne le sait ?) ! Vous rejoignez rapidement le chemin.
+10
+5000
+
+chemin
+
+Vous enclenchez le ventileur dans votre sac.
+0
+Rien ne se passe.
+-100
+5000
+
+
+

@@ -1,0 +1,126 @@
+\newpage
+\subsubsection{Fichier de configuration des questions}
+%INTRODUCTION
+
+Les questions utilisées dans le jeux sont, comme nous avons pu le voir, présentes dans plusieurs fichiers texte, un pour chaque question.
+\newline
+Ces fichiers de questions contiennent non seulement l'intitulé de la dite question, mais aussi les différentes informations qui nous sont nécessaires pour la bonne exécution du jeu. Nous allons voir plus en détail \textbf{l'organisation de ces fichiers de configuration}.
+\newline
+
+%FICHIER DE CONFIGURATION
+
+\begin{itemize}
+
+	%INTITULE QUESTION
+	\item Une ligne pour l'intitulé de la question
+		  
+		  \begin{itemize}
+		  	\item Celle-ci doit absolument être rédigé sur une seul ligne car nous utilisons la fonctions 				      \textbf{\textit{getline()}} pour récupérer chaque lignes du fichier de question.
+		  	
+		  	\item Par souci de cohérence, les intitulés de chaque question d'une zone commence par la même     	                         tournure de phrases. Par exemple , pour une zone "fôret", les questions commencerons toutes  	                         par "Vous vous trouvez dans une fôret...." ou une tournure équivalente.
+		  \end{itemize}
+	
+	%PROPOSITION	
+	\item Une ligne pour la première proposition
+			
+		  \begin{itemize}
+		  	\item Elle doit être comme pour la question rédigée en une seul ligne
+		  \end{itemize}
+		  
+	%LE NOMBRE DE POINT DE LA PROPOSITION
+	\item Le nombre de points que rapporte la proposition
+			
+		  \begin{itemize}
+		  	\item Il est fixé par le rédacteur de la question en fonction des objectif de points à atteindre
+		  \end{itemize}
+	
+	%LA REPONSE
+	\item La réponse à la proposition
+			
+		  \begin{itemize}
+		  	\item Cette réponse est affichée lorsque l'utilisateur sélectionne la proposition. Cela permet de lui 						  indiquer la conséquence de son choix.
+		  \end{itemize}
+	
+	%POINTS MINIMUMS
+	\item Le nombre de points minimum
+			
+		  \begin{itemize}
+		  	\item Ce nombre de points est celui nécessaire pour que la proposition s'affiche. 
+		  	\item Cela est utile pour dans les cas ou l'on veut qu'une action se révèle au héros exclusivement  si 					      celui-ci est passer par certains endroits du monde. 
+		  \end{itemize}	
+	
+	
+	%POINTS MINIMUMS
+	\item Le nombre de points maximum
+			
+		  \begin{itemize}
+		  	\item Ce nombre de points est basé sur le même principe que pour les point minimum. Mais cette fois-ci, ce 				  nombre de points fixe un seuil à partir duquel la proposition ne s'affiche plus.
+		  	\item Cela permet par exemple d'afficher une proposition à son arrivée sur un monde et ne plus l'afficher
+		  		  à nouveau si celui-ci revient sur la zone de départ. 
+		  \end{itemize}	
+		  
+	%Lien MONDE
+	\item Le Lien vers un éventuel monde
+			
+		  \begin{itemize}
+		  	\item Ce lien est utile lorsque le héros est sur le point de quitter un monde.
+		  	\item On indique le nom du monde de destination en toute lettre et si la zone ne renvois pas vers un 	  	                  monde, le champs reste vide. 
+		  \end{itemize}	    
+	
+	%Lien ZONES
+	\item Le lien vers les zones
+			
+		  \begin{itemize}
+		  	\item Ces liens correspondent aux différent zones vers lequelles peut renvoyé cette proposition. Pendant 		              le jeu, une de ces zones est choisie aléatoirement.
+		  	\item Le nom de chaque zones cible est mis en colonnes les uns à la suite des autres. 
+		  \end{itemize}	  
+
+	%Ligne vide
+	\item Une ligne vide
+		
+\end{itemize}  
+
+On ajoute ensuite une ou plusieurs nouvelle(s) proposition les unes à la suite des autres, puis le fichier \textbf{se termine} par \textbf{deux lignes vides}.
+\newpage
+Voici un exemple de fichier de question tel qu'il se présente dans le jeu:
+
+\begin{listing}{1}
+Vous êtes dans le maison des énigmes. Un vieux pirate bossu vous pose cette question : 
+"Qu'entend Sartre par 'l'existence précède l'essence' ?". 
+Cette homme n'existe pas à votre connaisance ou pas encore du moins mais 
+étant vous même un grand théoricien sur l'existence et l'essence voici ce 
+qui vous vient à l'esprit :
+L'homme a une nature.
+0
+T'es fou ou quoi !!!. Allez, on recommence.
+0
+5000
+
+maisonEnigme
+
+L'homme n'est que son projet.
+5
+Pas mal petit.
+0
+5000
+
+maisonEnigme
+
+L'existence n'est qu'une étape vers l'immortalité de l'essence.
+0
+Faux. Essaie encore.
+0
+5000
+
+maisonEnigme
+
+Vous partez, une question sur un homme inexistant n'a pas de sens.
+0
+
+0
+5000
+
+ville
+
+
+\end{listing}

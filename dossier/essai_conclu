@@ -1,0 +1,21 @@
+\section{Conclusion}
+
+
+
+\subsection{Ce qui aurait pu etre amélioré}
+
+Les points de vie du héros n'ont pu être implémentés. Pour l'instant, selon ses choix, le joueur est soit envoyé vers une nouvelle question, soit vers un écran de fin de jeu. Les points de vie auraient permis d'assouplir le gameplay.
+
+Certains attributs comme le nom, le prénom et l'âge du héros, faute de temps, n'ont pas été suffisamment inclus dans le jeu. Le joueur peut bien sûr les renseigner mais ils n'auront pas d'incidences au cours de la partie. À l'origine, nous avions par exemple prévu d'implémenter différentes tranches d'âges ce qui aurait permis de mieux adapter les situations au personnage.
+
+
+\subsection{Conclusion générale}
+
+Ce mini-projet nous a aidé à approfondir la notion de classe en C++.
+
+L'utilisation du framework QT a permis une nouvelle approche en matière de création d'interface graphique.
+ 
+L'importance de ce projet par rapport aux exercices habituels nous a incité à être efficace au possible. Dans cette optique nous avons découvert et utilisé la syntaxte Doxygen pour nos commentaires afin d'obtenir rapidement une documentation complète.
+
+
+

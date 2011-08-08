@@ -1,0 +1,27 @@
+Nous avons choisi de rendre le programme modulaire, de façon à pouvoir facilement changer un module: Ainsi, par exemple, l'interface graphique n'utilise que la classe "Jeu".
+\subsubsection{La classe "Random"}
+Nous avons choisi de réaliser une abstraction pour le tir des nombres pseudo-aléatoires utilisés dans le jeu pour choisir la prochaine question, ceci nous permettant notamment éventuellement pouvoir nous abstraire des fonctions \textit{rand()} en C, et de proposer des méthodes de plus haut niveau pour tirer des nombres pseudo-aléatoires.
+
+\subsubsection{Les classes "conteneurs": Univers/Monde/Zone/Question/Proposition}
+Les classes Univers,Monde,Zone,Question et Proposition sont utilisées afin de stocker les différentes informations de jeu: Chaque classe contient un tableau dynamique (\textit{std::vector}) contenant un élément inférieur (L'univers contient les Mondes, qui contiennent les zones, qui contiennent les questions, etc).
+
+\subsubsection{La classe "Sélectionneur", et son rôle dans le choix des questions}
+Nous avons choisi de concevoir une classe "Sélectionneur" pour la sélection de la prochaine question en fonction de la réponse du joueur.
+
+Cette classe procède de la façon suivante: 
+\begin{itemize}
+	\item Tout d'abord, elle procède à une vérification de la réponse choisie selon plusieurs critères: On prend en compte la cohérence du numéro de réponse choisi (Éviter que le joueur aie répondu à la proposition -1 ou 42 par exemple), et si le joueur est bien dans la fourchette de points nécessaires (Points Minimum $\leq$  Points Joueur $\leq$ Points Maximum 
+	\item Ensuite, elle choisit, en fonction de la proposition choisie précédemment, aléatoirement la prochaine zone si celle-ci doit changer. Si un "lien monde" a été renseigné, elle change également le monde actuel.
+	\item Enfin, elle tire aléatoirement une question parmi les questions de cette zone.  
+\end{itemize}
+\subsubsection{La classe Jeu: la liaison avec la/les interfaces graphiques}
+L'objectif de la classe "Jeu" est de faire la liaison entre les traitements internes du programme et le reste de l'application (l'interface graphique par exemple).Elle s'occupe ainsi de faire la "glue" entre toutes les autres classes, entre la classe "Héros" gérant le héros, Sélectionneur, et aussi Univers . Également, elle présente  différentes méthodes permettant à l'interface sous-jacente d'avancer dans le jeu, et propage également les exceptions lancées par les classes utilisées.
+
+Elle sert donc d'abstraction pour les classes gérant l'interface graphique.
+\subsubsection{La classe "MainWindow", pour l'interface de l'application}
+La classe MainWindow  est la classe principale de l'interface graphique. Celle-ci gère toute l'interface graphique du jeu, gérant l'affichage de la question et des boutons, en fonction de la question.
+
+Elle fait la liaison avec les données de jeu en utilisant une instance de la classe "Jeu", qu'elle utilise pour récupérer les différentes informations et renvoyer les valeurs choisies par le joueur.
+
+
+L'objectif de la classe DebugDock est, quant à lui, à des fins de débogage, d'afficher toutes les informations sur le joueur et l'état actuel, et de pouvoir modifier les informations actuelles. Elle se présente sous la forme d'un "dock" dans l'interface.

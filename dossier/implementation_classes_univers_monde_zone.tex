@@ -1,0 +1,33 @@
+\subsection{Décisions sur l'implémentation}
+%INTRODUCTION
+
+Il aura bien fallu trois réunions pour ce mettre d'accord sur la structure que vas adopter le Générateur Pseudo Aléatoire de Scénario d'Aventure.
+
+
+La  problématique était d'arriver à une structure facilitant la partie aléatoire de l'implémentation, tout en permettant de garder un jeu cohérent sous tout point de vue.
+Qui dit aléatoire, dit arbre binaire ou divers choix possible. Donc la structure doit pouvoir adopter la possibilité d'offrir plusieurs chemins, plusieurs choix.
+
+
+Solution trouvé: une structure composé de sous structures.
+
+
+A première vu, cette solution parait suffisante et efficace. la décomposition en plusieurs sous-structures permet de briser un de nos principaux problème, la linéarité du jeu. Il faudrait imaginer les sous-structures comme des chemins différents possibles pour le joueur. La partie implémentation aléatoire du programme se charge d'établir la route entre ces divers sous-structures, nous ne rentrerons pas dans les détails ici.
+
+
+Très vite, nous nous sommes rendu compte que décomposer le squelette du jeu en sous-structure ne suffisait pas pour arriver à donner l'illusion d'un jeu aléatoire au joueur. les possibilités offertes par les sous-structures étaient très intéressante mais pas assez.
+
+
+Ce qui nous a paru vite évident, se reposant sur le même principe, c'est le besoin de décomposer les structures en sous-structures qui eux même sont décomposer en sous-structures. Plus le degré de profondeur des sous-ensembles est important, plus les chemins sont variés et l'illusion de l'aléatoire présente. Mais aussi plus c'est profond, plus l'implémentation devient complexe et périlleux.
+
+
+Nous avons estimé le juste équilibre entre complexité et facilité pour l'aléatoire ainsi:
+
+
+La structure générale est composé d'Univers. Ces Univers sont eux-même constitué de Mondes. Ces derniers sont eux aussi constitué de zone et enfin chaque zone a plusieurs questions.
+
+
+Il existe une Zone de départ dans un Monde de départ dans un Univers.
+Nous avons choisis ce système de départ pour obliger le joueur à se trouver dans une zone précise, dans le but de former le joueur au jeu. C'est en quelque sorte le tutoriel du début du jeu.
+
+
+C'est bien la seule partie du jeu qui ne sera pas aléatoire.

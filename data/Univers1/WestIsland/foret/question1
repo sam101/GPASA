@@ -1,0 +1,32 @@
+Vous arrivez dans ce qui semble être une forêt: Après quelques balbutiements, vous vous retrouvez au milieu des herbes hautes, des arbres sans feuilles noirs, qui semblent tout sauf vous donner confiance.
+Vous décidez, pour retrouver le chemin, de suivre les traces le soleil et de vous orienter correctement.
+10
+Ceci semblait, en effet, être une bonne idée: Vous semblez appercevoir au loin le chemin que vous pouviez trouver depuis la plage
+10
+5000
+
+chemin
+
+Vous décidez de vous arreter pour réfléchir, et de regarder de quel coté pousse la mousse sur les arbres pour vous orienter.
+10
+Ceci aurait pu être une idée intéréssante, mais la flore locale de NorthIsland n'obéit pas vraiment aux lois de la nature: Vous n'êtes pas beaucoup plus avancés.
+-5000
+5000
+
+foret
+
+Vous décidez de monter à un arbre pour tenter de voir de plus loin
+-10
+Vous tentez de monter à l'arbre, et vous ramassez d'une façon mémorable: En plus de n'êtes pas plus avancé, vous vous êtes bléssé à la jambe: Vous perdez 5 points de vie.
+-5000
+5000
+
+
+Vous décidez de tourner en rond jusqu'à que la mort s'en suive
+-1000
+
+-5000
+5000
+
+foretMort
+

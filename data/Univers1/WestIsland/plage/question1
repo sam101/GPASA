@@ -1,0 +1,33 @@
+Il semble que vous ayez touché terre et soyez arrivé sur une ile. Un panneau, vert décoré d'une tête de mort vous indique "WestIsland. Vous n'êtes pas le bienvenu". Cependant, vous n'oubliez pas votre courage plus ou moins légendaire ni votre objectif. Vous observez devant vous un chemin tracé, qui semble mener au fond vers quelque chose qui ressemble à un donjon. Des montagnes sont également visibles dans l'île (mais quelle taille peut-elle bien faire ?), ainsi qu'une forêt.
+Vous avancez, d'un air hésitant, vers le chemin tout tracé qui est devant vous
+10
+
+-5000
+5000
+
+chemin
+
+Vous décidez de continuer à explorer la plage: Il semble y faire plus chaud, et un chemin tout tracé, c'est beaucoup trop facile
+-10
+
+-5000
+5000
+
+plage2
+
+Vous décidez de vous diriger vers la forêt et les montagnes, coupant à travers la plage.
+-20
+
+-5000
+5000
+
+foret
+montagnes
+
+Vous décidez de partir d'ici: Franchement, une tête de mort, ça le fait pas.
+0
+
+-5000
+5000
+IleDepart
+plage2

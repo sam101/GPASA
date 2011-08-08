@@ -1,0 +1,90 @@
+\subsection{Organisation du groupe}
+Le Générateur Pseudo-Aléatoire de Scénario d'Aventure ne s'est pas formé en un jour.
+Une équipe de quatre personnes composé de Samuel Lepetit, Alexandre Lopes-Meda, Sarkis Mouradian et Maxime Lefevre en est l'origine.
+
+%//raison du choix de ce projet parmis d'autres
+\begin{itemize}
+
+\item Plusieurs projets semblaient intéressants, il y avait bien le moteur 3D à la "Doom", un programme permettant de gérer les absences en Amphithéâtre
+ et notre générateur pseudo aléatoire de scénario d'aventure.
+ Pour certains le moteur 3D était un projet trop commun, pour d'autre le programme gérant les absences n'était tout simplement pas intéressent, le générateur paru comme un choix satisfaisant tout le monde.
+Le coté gestion de l'aléatoire fut très intéressant. Comment combiner l'aléatoire dans un jeu avec la cohérence que le scénario de ce jeu implique. C'est cette problématique qui fit pencher notre choix vers ce projet.
+
+%//premiere réunion : création de l'uml diagramme de classe
+
+\item Dès le premier rendez-vous, quelques questions se posèrent.
+Qui sera le chef de projet? Dans quel langage sera codé le projet? Comment allons nous répartir les taches?
+Il fut très vite convenu  que toutes les décisions seraient prises en groupe et le langage serait le c++ car c'est le langage le plus pratiqué par chacun des membres du groupes et donc le plus maitrisé. Pour répartir les taches, il parait logique qu'il faut d'abord avoir des taches a effectué. C'est ainsi que comme tout réel projet, nous avons réfléchie au code avant de codé. Un diagramme de classe fut élaborer et qui par la suite fut sans cesse mis a jour.
+La base des différentes classes que nous avions établie fut rapidement codé. Mais il restait encore le gros du travail, l'algorithme de l'aléatoire et divers questions sur l'implémentation du jeu.
+
+%//réunion discussion structure du projet
+
+\item Il aura bien fallu trois réunions pour ce mettre d'accord sur la structure que vas adopter le Générateur Pseudo Aléatoire de Scénario d'Aventure.
+
+
+\item La  problématique était d'arriver à une structure facilitant la partie aléatoire de l'implémentation, tout en permettant de garder un jeu cohérent sous tout point de vue.
+Qui dit aléatoire, dit arbre binaire ou divers choix possible. Donc la structure doit pouvoir adopter la possibilité d'offrir plusieurs chemins, plusieurs choix.
+
+
+\item \textbf{Solution trouvée: une structure composée de sous structures.}
+
+
+A première vu, cette solution parait suffisante et efficace. la décomposition en plusieurs sous-structures permet de briser un de nos principaux problème, la linéarité du jeu. Il faudrait imaginer les sous-structures comme des chemins différents possibles pour le joueur. La partie implémentation aléatoire du programme se charge d'établir la route entre ces divers sous-structures, nous ne rentrerons pas dans les détails ici.
+
+
+\item Très vite, nous nous sommes rendu compte que décomposer le squelette du jeu en sous-structure ne suffisait pas pour arriver à donner l'illusion d'un jeu aléatoire au joueur. les possibilités offertes par les sous-structures étaient très intéressante mais pas assez.
+
+
+\item Ce qui nous a paru vite évident, se reposant sur le même principe, c'est le besoin de décomposer les structures en sous-structures qui eux même sont décomposer en sous-structures. Plus le degré de profondeur des sous-ensembles est important, plus les chemins sont variés et l'illusion de l'aléatoire présente. Mais aussi plus c'est profond, plus l'implémentation devient complexe et périlleux.
+
+%//réunion d'apres discution algorithmique sur aléatoire
+
+\item Plusieurs réunions se sont aussi porté sur la mise en place de l'aléatoire dans le jeu. Ce n'était pas une notion simple, il y a eu beaucoup de divergences et de mal à assimiler le concept finale. 
+Divers hypothèses on étaient mis en places: 
+  \begin{itemize}
+  \item Un scénario avec un début fixe, un parcours aléatoire et une fin fixe.
+  \newline
+  problème: ramener le joueur a la seule fin du jeu prévu
+  \item Un scénario avec des étapes obligatoires dans le parcours du joueur
+  \newline
+  problème: une partie de l'aléatoire du jeu est retiré
+  \item Un scénario avec un début fixe et tout le reste aléatoire, la fin compris.
+  \newline
+  C'est ce qui sera retenu par le groupe.
+  \end{itemize}
+%//réunion d'apres discution sur Zone questions
+
+Autre décision importante qui fut prise, l'organisation entre les zones et les questions.
+Plusieurs idées furent proposés: 
+\begin{itemize}
+\item faire une liste de questions et tiré au sort une question pour la zone.
+   problème: garder une cohérence avec la question tiré et la zone
+\item faire différentes listes de questions pour chaque monde
+   problème: toujours le même problème, les questions sont plus ciblées par rapport au monde, mais un       		   monde est vaste et les incohérences ont une forte probabilité d'apparaitre tout de même.
+   
+\end{itemize}
+ 
+ 
+\item \textbf{Solution trouvée:} Chaque zone possède ces propres questions, donc en tombant dans une zone, on ne peut avoir que des questions lié a cette zone qui pourrait tombé, cela fait quelque peu abstraction du concept aléatoire mais c'est bien le seul endroit ou l'aléatoire n'est pas totale.
+%//réunion d'apres discution sur choix de scénario/theme 
+\newline
+
+Malgré cela, il nous paraissait tout de même important de rendre un minimum aléatoire les questions lié à une zone. C'est un ainsi que l'idée du système de point est venu: chaque réponse possible permet d'accumuler un nombre de point positif ou négatif. Et en fonction du nombre de point une question est susceptible d'apparaitre ou non.
+\newline
+
+Pour faciliter la cohérence dans la transition entres mondes, nous avons choisis de nous inspirer de l'univers du manga "One Piece". Chaque monde est en faite une ile, donc pour passer de n'importe qu'elle ile à une autre, il suffit tout simplement de prendre la mer.
+\newline
+
+Au fur et a mesure des réunions, beaucoup d'idées ont été trouvées mais n'ont pas eu de suite malheureusement faute de temps.
+\newline
+
+\begin{itemize}
+\item Nous avions pensé faire un système de boss. Un boss qui aurai été un monde à lui seul et dont les différentes zones auraient été les étapes et épreuves à parcourir pour réussir à le vaincre.
+  \newline
+\item Il n'y a pas de fin "évidente" du jeu, mais juste des fin "game-over" en cours de jeu.
+  \newline
+\item Un système de points de vie fut imaginé, le joueur possédant son endurance et ses points de vie, mais aussi son nom et prénom. Mais encore une fois, tout cela fut inexploitée faute de temps.
+  \newline
+\end{itemize}
+%//choses discuter et non faitre
+\end{itemize}

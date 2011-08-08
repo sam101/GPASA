@@ -1,0 +1,32 @@
+Vous entrez dans la lisière d'une forêt. Après plusieurs heures de marche, vous vous retrouvez face à une clairière, jonchée de troncs brulés. Un tronc bleu se trouve au milieu de ceux-ci. Il vous semble maintenant évident que aller dans cette forêt était une mauvaise idée.
+Vous sortez une épee de votre sac (sans vous demander d'où elle pouvait bien sortir) et frappez le tronc au milieu de la forêt.
+-20
+Après avoir frappé le tronc, une armée de gnomes mutants bleus vous attaque: Vous vous en tirez après de nombreuses heures de combat, mais cela vous a fait perdre du temps (et des points de vie).
+-100
+5000
+
+
+Vous sautez dans un trou dans lequel vous apperceviez un liquide rouge brulant
+-1000
+Ceci était une mauvaise idée.
+-5000
+5000
+
+foretMort
+
+Vous vous orientez en suivant le soleil, tachant de sortir de cette forêt qui vous semble relativement étrange.
+10
+Il semblerait que vous commenciez à ne plus être perdu... Mais malheuresement vous êtes toujours dans la forêt.
+-5000
+5000
+
+
+Vous décidez de faire demi-tour et de revenir sur vos pas: Après tout, cette forêt semble étrange, cela pourrait vous ramener à la plage
+10
+Ceci semblait en effet être une bonne idée: Après quelques minutes de marche dans un milieu que vous ne reconaissez pas, vous vous retrouvez sur un chemin.
+10
+5000
+
+chemin
+
+

@@ -1,0 +1,23 @@
+image d'introduction => tonneau échoué sur une plage de EastBlue
+phrase d'intro => vous venez de vous échouez sur une île , vous ne vous rappelez pas ce qui a bien pu se passer pour vous retrouvez totalement perdu, dans une île dont vous ne connaissez même pas le nom. Tout ce que vous avez c'est une boussole.
+
+premiere question obligatoire :
+
+vous regardez autour de vous, vous aperçevez un camp a l'ouest d'ou s'échappe de la fumé.
+A l'Est, vous apercevez un bateau avec un drapeau sur lequel est déssiné une tete de mort.
+en face de vous (Nord) se trouve une gigantesque foret sombre quasi impénétrable.
+
+qu'elle direction voulez vous prendre?
+// saut de 2 lignes
+4 // nombre de proposition
+// saut de 1 ligne
+Aller  vers le camp ? // proposition
+campPirates//Resultat: on se retrouve dans une zone appeler campPirates , selon votre comportement avec les pirates, cela peut etre positif ou négatif
+//saut de ligne
+aller dans la foret sombre//proposition
+entreeForetPlage//Resultat: on se retrouve dans une zone appeler entreeForetPlage , qui va permettre selon la réponse a la question, de se balader dans la foret ou d'en sortir
+//saut de ligne
+aller vers le bateau qui a l'air abandonné//proposition
+BatteauPirate//Résultat : on se retrouve dans une zone appeler BatteauPirate
+
+//revoir l'agencement du text
