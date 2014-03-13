@@ -1,7 +1,7 @@
 #include "DebugDock.h"
 #ifdef DEBUG
-#include <QtGui/QFormLayout>
-#include <QtGui/QVBoxLayout>
+#include <QFormLayout>
+#include <QVBoxLayout>
 /**
   * Constructeur
   */

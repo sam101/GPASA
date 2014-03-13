@@ -1,7 +1,7 @@
 #include "Selecteur.h"
-#include <QtGui/QLabel>
-#include <QtGui/QFormLayout>
-#include <QtGui/QVBoxLayout>
+#include <QLabel>
+#include <QFormLayout>
+#include <QVBoxLayout>
 /**
   * Constructeur.
   * Construit l'interface du widget

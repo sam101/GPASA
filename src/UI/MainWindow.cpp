@@ -3,14 +3,14 @@
  * src/UI/MainWindow.cpp
  */
 #include "MainWindow.h"
-#include <QtCore/QDebug>
-#include <QtCore/QSettings>
-#include <QtGui/QAction>
-#include <QtGui/QFileDialog>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
-#include <QtGui/QMessageBox>
-#include <QtGui/QScrollArea>
+#include <QDebug>
+#include <QSettings>
+#include <QAction>
+#include <QFileDialog>
+#include <QMenu>
+#include <QMenuBar>
+#include <QMessageBox>
+#include <QScrollArea>
 /**
   * Constructeur
   */

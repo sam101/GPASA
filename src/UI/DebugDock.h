@@ -2,10 +2,10 @@
 #define DEBUGDOCK_H
 #include "Config.h"
 #ifdef DEBUG
-#include <QtGui/QDockWidget>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpinBox>
+#include <QDockWidget>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QSpinBox>
 
 #include "../Jeu.h"
 /**

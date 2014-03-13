@@ -1,11 +1,11 @@
 #ifndef SELECTEUR_H
 #define SELECTEUR_H
-#include <QtGui/QCloseEvent>
-#include <QtGui/QDialog>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpinBox>
-#include <QtGui/QWidget>
+#include <QCloseEvent>
+#include <QDialog>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QSpinBox>
+#include <QWidget>
 
 #include "../Jeu.h"
 /**

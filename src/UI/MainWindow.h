@@ -5,13 +5,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QLabel>
-#include <QtGui/QMainWindow>
-#include <QtGui/QPushButton>
-#include <QtGui/QTextBrowser>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QMainWindow>
+#include <QPushButton>
+#include <QTextBrowser>
+#include <QVBoxLayout>
+#include <QWidget>
 
 #include "DebugDock.h"
 #include "Selecteur.h"

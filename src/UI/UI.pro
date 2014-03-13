@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core
-
+QT       += widgets
 TARGET = GPASA
 CONFIG   += console
 CONFIG   -= app_bundle

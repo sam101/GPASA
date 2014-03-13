@@ -3,7 +3,7 @@
  * src/UI/main.cpp
  * Contient le fichier main utilisé pour la gui sur desktop.
  */
-#include <QtGui/QApplication>
+#include <QApplication>
 #include <QTextCodec>
 #include "MainWindow.h"
 int main(int argc, char *argv[])
@@ -14,9 +14,6 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("GPASA");
     QCoreApplication::setApplicationName("GPASA");
 
-    //On selectionne le codec voulu (UTF-8) pour afficher les accents
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
-    QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     //On crée la fenêtre principale
     MainWindow m("../../data/Univers1");
 #ifdef DEBUG
